@@ -26,4 +26,27 @@
 
 </body>
 
+<section>
+    <img class="mySlides" src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Olive_Garden_Italian_Restaurant.jpg" style="height:500px; width:550px;">
+    <img class="mySlides" src="https://www.tastingtable.com/img/gallery/8-absolute-best-dishes-to-order-at-olive-garden/chicken-and-shrimp-carbonara-1732021997.jpg" style="height:500px; width:550px;">
+    <img class="mySlides" src="https://logos-world.net/wp-content/uploads/2022/02/Olive-Garden-Logo-History.jpg" style="height:500px; width:550px;">
+</section>
+<script>
+    // Automatic Slideshow - change image every 3 seconds
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 3000);
+
+</scrint >
+
 </html>
